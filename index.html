@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freezy's Froyo Shop</title>
+    <script src="froyo_shop_code.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Freezy's Froyo Shop</h1>
+        <div class="button" id="promptButton"><input type="button" value="Prompt"></div>
+    </header>
+    <div id="items"></div>
+    <div id="order">
+        <h1>Order</h1>
+        <div id="recipt">
+
+        </div>
+        <hr class="divDashed">
+        <h2 id="total">Total: 0</h2>
+    </div>
+
+</body>
+
+</html>
+
+<template id="item_template">
+    <div class="item">
+        <div class="img"> <img
+                src="https://images.squarespace-cdn.com/content/v1/5a5924598a02c7d4888aa208/1665437054138-7N5DSFPI14I860K4JVAF/Froyo+Earth+Google+Image+7+of+9.jpg">
+        </div>
+        <div class="button"><input type="button" value="+"><input type="button" value="-"></div>
+        <div class="info">
+            <div class="name">
+                <h2>Strawberry
+
+                </h2>
+            </div>
+            <div class="price">
+                <h2>$5</h2>
+            </div>
+            <div class="stock"><h2>55</h2></div>
+        </div>
+    </div>
+</template>
+<template id="order_icon_template">
+    <h3>a</h3>
+
+</template>
